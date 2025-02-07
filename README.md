@@ -43,11 +43,9 @@ Sample Structure:
 ```json
 {
     "example": {
-        FileId("file1.txt"): [Occurence(Line: 1, Column: 5), Occurence(Line: 3, Column: 15)],
-        FileId("file2.txt"): [Occurence(Line: 0, Column: 8)]
+        "file1.txt": ["Occurrence":{"Line": 1, "Column": 5}, "Occurrence":{"Line": 2, "Column": 15}]
     },
     "car": {
-        FileId("file3.txt"): [Occurence(Line: 9, Column: 5)]
+        "file3.txt": ["Occurrence":{"Line": 2, "Column": 5}]
     }
-    ...
 }

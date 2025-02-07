@@ -40,7 +40,6 @@ public class Indexer
         }
 
         int uniqueWordsAdded = 0;
-        //hyphenated words will break with read all lines but this is just a poc anyway
         var fileLines = await File.ReadAllLinesAsync(filePath);
         foreach (var (i, line) in fileLines.Select((s, i) => ( i, s )))
         {
@@ -57,7 +56,7 @@ public class Indexer
                     _words[word].Add(fileId, new List<Occurence>());    
                 }
                
-                //i dont actually know the column so just use a random number for poc 
+                //i don't actually know the column so just use a random number for poc 
                 _words[word][fileId].Add(new Occurence(i, new Random().Next(20_000)));
                 
             }

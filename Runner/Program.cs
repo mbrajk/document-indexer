@@ -35,5 +35,5 @@ while (true)
         Console.WriteLine($"{input} was not found in any files");
     }
      
-    Console.Write("Enter another search term (Macadoodle - C to exit): ");
+    Console.Write("Enter another search term: ");
 }

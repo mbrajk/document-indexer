@@ -18,7 +18,7 @@ We accomplish this by initially processing all of the files that will be indexed
 
 ---
 
-## Considerations And 
+## Considerations And Potential Improvements
 
 - **Date searching**: Standardize dates to allow O(1) date lookup regardless of format provided by user
 - **Begin perf monitoring**: Will not know which improvements are meaningful if we metrics around memory and speed are not tracked. This should be one of the first things to consider for any feature.
